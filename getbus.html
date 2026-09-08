@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to getBUS...</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+        .loading {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Redirecting to getBUS...</h1>
+    <p class="loading">Please wait while we direct you to the correct app store.</p>
+
+    <script>
+        function redirectUser() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=world.newdigital.getbus";
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/app/id6736360762";
+            } else {
+                // Redirect non-mobile users to the website
+                window.location.href = "https://getbus.app";
+            }
+        }
+
+        // Run redirect function automatically when page loads
+        window.onload = redirectUser;
+    </script>
+</body>
+</html>
