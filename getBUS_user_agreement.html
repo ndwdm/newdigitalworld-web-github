@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getBUS - User Agreement</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        .container { max-width: 800px; margin: auto; }
+        .language-selector { text-align: center; margin-bottom: 20px; }
+        .language-selector a { margin: 0 10px; text-decoration: none; font-weight: bold; }
+        .agreement { display: none; }
+        .active { display: block; }
+    </style>
+    <script>
+        function showAgreement(lang) {
+            document.querySelectorAll('.agreement').forEach(el => el.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <div class="language-selector">
+        <a href="#" onclick="showAgreement('english'); return false;">English</a> |
+        <a href="#" onclick="showAgreement('spanish'); return false;">Español</a> |
+        <a href="#" onclick="showAgreement('russian'); return false;">Русский</a>
+    </div>
+
+    <!-- English Agreement -->
+    <div id="english" class="agreement active">
+        <h2>getBUS - User Agreement</h2>
+        <p><strong>Last Updated: February 25, 2025</strong></p>
+        <ol>
+            <li><strong>Introduction</strong> - Welcome to the "getBUS" app. By using this application, you agree to the following terms.</li>
+            <li><strong>App Purpose & Disclaimer</strong>
+                <ul>
+                    <li>The app does not provide real-time transport tracking, and any similarity to actual transport movements is purely coincidental.</li>
+                    <li>This app is not affiliated with, endorsed by, or officially connected to any transport agencies or city authorities.</li>
+                </ul>
+            </li>
+            <li><strong>User Location & Analytics</strong>
+                <ul>
+                    <li>The app may request location access to enhance analytics and improve user experience.</li>
+                    <li>Location data may be stored and analyzed using third-party services such as Firebase Analytics.</li>
+                    <li>By using this app, you consent to the collection and processing of non-personally identifiable location data for analytics purposes.</li>
+                </ul>
+            </li>
+            <li><strong>Limitation of Liability</strong>
+                <ul>
+                    <li>The developer is not responsible for any errors, delays, inaccuracies, financial losses, travel disruptions, or other direct or indirect damages caused by using this app.</li>
+                    <li>You agree not to hold the developer liable for any legal claims, damages, or financial losses resulting from app usage.</li>
+                    <li>Contacting the developer does not guarantee a response, and the developer has no obligation to assist with issues or complaints.</li>
+                </ul>
+            </li>
+            <li><strong>Legal Protection & No Claims Clause</strong>
+                <ul>
+                    <li>By using this app, you waive any rights to legal claims, lawsuits, or financial compensation against the developer.</li>
+                    <li>If you disagree with these terms, you must uninstall the app and stop using it immediately.</li>
+                </ul>
+            </li>
+            <li><strong>Privacy Policy</strong>
+                <ul>
+                    <li>We do not collect personally identifiable information beyond standard analytics data.</li>
+                    <li>The app may use Firebase Analytics to collect anonymous user behavior insights.</li>
+                    <li>Location data, if collected, is used solely for app performance improvements and is not shared with third parties for commercial purposes.</li>
+                    <li>Advertisements displayed in the app may use user data, such as location or possible identifiers, for ad personalization.</li>
+                </ul>
+            </li>
+            <li><strong>Contact Information</strong>
+                <p>For general inquiries, please contact: <strong>ndwdm@hotmail.com</strong></p>
+                <p><em>(Note: Contacting the developer does not guarantee a response.)</em></p>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Spanish Agreement -->
+    <div id="spanish" class="agreement">
+        <h2>getBUS - Acuerdo de Usuario</h2>
+        <p><strong>Última actualización: 25 de febrero de 2025</strong></p>
+        <ol>
+            <li><strong>Introducción</strong> - Bienvenido a la aplicación "getBUS". Al utilizar esta aplicación, usted acepta los siguientes términos.</li>
+            <li><strong>Propósito y Descargo de Responsabilidad</strong>
+                <ul>
+                    <li>La aplicación no proporciona seguimiento de transporte en tiempo real, y cualquier coincidencia con movimientos reales es puramente casual.</li>
+                    <li>Esta aplicación no está afiliada, respaldada ni conectada oficialmente con ninguna agencia de transporte o autoridad municipal.</li>
+                </ul>
+            </li>
+            <li><strong>Ubicación y análisis del usuario</strong>
+                <ul>
+                    <li>La aplicación puede solicitar acceso a la ubicación para mejorar los análisis y la experiencia del usuario.</li>
+                    <li>Los datos de ubicación pueden almacenarse y analizarse mediante servicios de terceros como Firebase Analytics.</li>
+                    <li>Al utilizar esta aplicación, acepta la recopilación y el procesamiento de datos de ubicación no personalmente identificables para fines analíticos.</li>
+                </ul>
+            </li>
+            <li><strong>Limitación de responsabilidad</strong>
+                <ul>
+                    <li>El desarrollador no es responsable de ningún error, demora, inexactitud, pérdida financiera, interrupción de viajes u otros daños directos o indirectos causados ​​por el uso de esta aplicación.</li>
+                    <li>Acepta no responsabilizar al desarrollador por ningún reclamo legal, daño o pérdida financiera que resulte del uso de la aplicación.</li>
+                    <li>Comunicarse con el desarrollador no garantiza una respuesta, y el desarrollador no tiene la obligación de ayudar con problemas o quejas.</li>
+                </ul>
+            </li>
+            <li><strong>Cláusula de protección legal y no presentación de reclamos</strong>
+                <ul>
+                    <li>Al usar esta aplicación, renuncia a cualquier derecho a reclamos legales, demandas o compensación financiera contra el desarrollador.</li>
+                    <li>Si no está de acuerdo con estos términos, debe desinstalar la aplicación y dejar de usarla de inmediato.</li>
+                </ul>
+            </li>
+            <li><strong>Política de privacidad</strong>
+                <ul>
+                    <li>No recopilamos información de identificación personal más allá de los datos analíticos estándar.</li>
+                    <li>La aplicación puede usar Firebase Analytics para recopilar información anónima sobre el comportamiento del usuario.</li>
+                    <li>Los datos de ubicación, si se recopilan, se utilizan únicamente para mejorar el rendimiento de la aplicación y no se comparten con terceros con fines comerciales.</li>
+                    <li>Los anuncios que se muestran en la aplicación pueden usar datos del usuario, como la ubicación o posibles identificadores, para la personalización de anuncios.</li>
+                </ul>
+            </li>
+            <li><strong>Información de contacto</strong>
+                <p>Para consultas generales, comuníquese con: <strong>ndwdm@hotmail.com</strong></p>
+                <p><em>(Nota: Comunicarse con el desarrollador no garantiza una respuesta).</em></p>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Russian Agreement -->
+    <div id="russian" class="agreement">
+        <h2>getBUS - Пользовательское соглашение</h2>
+        <p><strong>Обновлено: 25 февраля, 2025</strong></p>
+        <ol>
+            <li><strong>Вводная часть</strong> - Добро пожаловать в приложение «getBUS». Используя это приложение, вы соглашаетесь со следующими условиями.</li>
+            <li><strong>Назначение приложения и отказ от ответственности</strong>
+                <ul>
+                    <li>Приложение не обеспечивает отслеживание транспорта в режиме реального времени, и любое сходство с реальными перемещениями транспорта является чисто случайным.</li>
+                    <li>Приложение не связано официально ни с какими транспортными агентствами или городскими властями.</li>
+                </ul>
+            </li>
+            <li><strong>Местоположение пользователя и аналитика</strong>
+                <ul>
+                    <li>Приложение может запрашивать доступ к местоположению для улучшения аналитики и улучшения пользовательского опыта.</li>
+                    <li>Данные о местоположении могут храниться и анализироваться с использованием сторонних сервисов, таких как Firebase Analytics.</li>
+                    <li>Используя это приложение, вы даете согласие на сбор и обработку неперсоноидентифицируемых данных о местоположении в аналитических целях.</li>
+                </ul>
+            </li>
+            <li><strong>Ограничение ответственности</strong>
+                <ul>
+                    <li>Разработчик не несет ответственности за какие-либо ошибки, задержки, неточности, финансовые потери, сбои в поездках или другой прямой или косвенный ущерб, вызванный использованием этого приложения.</li>
+                    <li>Вы соглашаетесь не возлагать на разработчика ответственность за любые юридические претензии, убытки или финансовые потери, возникшие в результате использования приложения.</li>
+                    <li>Обращение к разработчику не гарантирует ответа, и разработчик не обязан помогать с проблемами или жалобами.</li>
+                </ul>
+            </li>
+            <li><strong>Правовая защита и положение об отсутствии претензий</strong>
+                <ul>
+                    <li>Используя это приложение, вы отказываетесь от любых прав на юридические претензии, иски или финансовую компенсацию против разработчика.</li>
+                    <li>Если вы не согласны с этими условиями, вам следует немедленно удалить приложение и прекратить его использование.</li>
+                </ul>
+            </li>
+            <li><strong>Политика конфиденциальности</strong>
+                <ul>
+                    <li>Мы не собираем персональные данные, выходящие за рамки стандартных аналитических данных.</li>
+                    <li>Приложение может использовать Firebase Analytics для сбора анонимной информации о поведении пользователей.</li>
+                    <li>Данные о местоположении, если они собираются, используются исключительно для улучшения производительности приложения и не передаются третьим лицам в коммерческих целях.</li>
+                    <li>Рекламные объявления, отображаемые в приложении, могут использовать данные пользователя, такие как местоположение или возможные идентификаторы, для персонализации рекламы.</li>
+                </ul>
+            </li>
+            <li><strong>Контактная информация</strong>
+                <p>По общим вопросам обращайтесь: <strong>ndwdm@hotmail.com</strong></p>
+                <p><em>(Примечание: Обращение к разработчику не гарантирует ответа.)</em></p>
+            </li>
+        </ol>
+    </div>
+
+</div>
+
+</body>
+</html>
